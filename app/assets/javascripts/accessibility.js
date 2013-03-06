@@ -24,7 +24,7 @@ $(function(){
 	//
 	// Elementos Geral
 	// $('.pathWays').attr('role','navigation');
-	$('#rodape').attr('role','contentinfo');
+	$('#footer').attr('role','contentinfo');
 	$('.alert').attr('role','alert');
 	$('a.btn, .modal-header .close').attr('role','button');
 	$('.boxGray').attr('role','region');
