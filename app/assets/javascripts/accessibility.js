@@ -7,7 +7,7 @@ $(function(){
 	// $('input, select, .pathWay li.active > a, .btn-primary, .alert a').attr('tabindex','2');
 	// $('.btn-primary').attr('tabindex','3');
 	// $('.tabs li a').attr('tabindex','4');
-	//$('#menuPrincipal li > a, #main .chamadasBox h3 a, .headerContent h1, .alert').attr('tabindex','2');
+	//$('#menuPrincipal li > a, #main .shortcutBox h3 a, .headerContent h1, .alert').attr('tabindex','2');
 	$('#menuPrincipal li > a').attr('tabindex','2');
 	$('.btn, .tabs a').attr('tabindex','3');
 	//$('input, select, .btn.btn-primary').attr('tabindex','2');
@@ -34,7 +34,7 @@ $(function(){
 	$('.sidebar').attr('role','complementary');
 	$('input.required').attr('aria-required','true');
 	$('.lnkCoverAll').attr('tabindex','3');
-	$('.chamadasBox h3 > a').attr('aria-hidden','true');
+	$('.shortcutBox h3 > a').attr('aria-hidden','true');
 
 	//
 	// TABS
