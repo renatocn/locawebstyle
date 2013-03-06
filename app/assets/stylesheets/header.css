@@ -2,8 +2,8 @@ header.headerPrincipal {
   border-top:4px solid #BBB;
   background:#f0f0f0 url(img/bgHeader.gif) repeat-X top center;
 }
-header.headerPrincipal .limite {height:120px; position:relative;}
-header.headerPrincipal:after, header.headerPrincipal .limite:after {content:" "; display:block; clear:both;}
+header.headerPrincipal .limit {height:120px; position:relative;}
+header.headerPrincipal:after, header.headerPrincipal .limit:after {content:" "; display:block; clear:both;}
 
 /** Nome do serviço - Logo - H1 **/
 .serviceName {
@@ -305,6 +305,7 @@ header.headerPrincipal .btn-group {display:inline-block;}
 }
 .listIdent li span {padding-left:10px; display:inline-block}
 
-.dropdown-menu.listIdent .lnkSeta {margin:10px; background-position:left 4px; padding-left:13px;}
+.dropdown-menu.listIdent .lnkArrow {margin:10px; background-position:left 4px; padding-left:13px;}
+
 .lnkContent{opacity: 0;}
 .lnkContent:focus{opacity: 1;}
