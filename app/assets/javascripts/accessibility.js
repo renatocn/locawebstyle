@@ -21,6 +21,7 @@ $(function(){
 	$('#menuPrincipal').attr('role','navigation');
 	$('#menuPrincipal li a').attr('role','menuitem');
 
+
 	//
 	// Elementos Geral
 	// $('.pathWays').attr('role','navigation');
@@ -59,6 +60,8 @@ $(function(){
 		$(this).prepend('<a href="#" role="button" aria-haspopup="true" aria-controls="'+target+'" aria-label="'+title+'" title="'+title+'" class="lnkCollapse" tabindex="3"></a>');
 	})
 	$('.collapse').find('[tabindex="3"]').attr('tabindex','0');
+
+
 	
 
 	// $('[data-toggle="collapse"]').attr('role','button').attr('tabindex','3');
