@@ -67,7 +67,7 @@ $(function(){
 	// $('[data-toggle="collapse"]').attr('role','button').attr('tabindex','3');
 
 	//Notificaçao
-	$('.alert, .focusOn').attr('tabindex','-1').focus();
+	$('.flash_alert, .focusOn').attr('tabindex','-1').focus();
 
 	//Ir para o conteudo 
 	$('.lnkContent').on('click',function(e){
