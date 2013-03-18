@@ -35,6 +35,8 @@
   background: #FFF;
   border-top: 1px solid #d7d7d7;
   border-bottom: 4px solid #777;
+  position: relative;
+  z-index: 2;
 }
 
 #menuPrincipal > ul {
@@ -114,7 +116,9 @@
 #menuPrincipal > ul > li.selected > a:hover{color: #fff;}
 #menuPrincipal .parent:hover > a {box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, 0.2);}
 
-#menuPrincipal .parent > a:hover, #menuPrincipal .parent:hover > a {
+#menuPrincipal .parent > a:hover, 
+#menuPrincipal .parent:hover > a,
+#menuPrincipal ul li.parent.focus > a {
   color: #666;
   font: 14px 'Ubuntu', verdana, arial, tahoma, sans-serif;
   text-transform: uppercase;
@@ -132,6 +136,9 @@
   z-index: 2;
 }
 #menuPrincipal .parent {outline: none;}
+#menuPrincipal .parent.focus ul{
+  opacity: 1; visibility: visible;
+}
 
 #menuPrincipal > ul > li:hover ul,
 #menuPrincipal > ul > li:active ul {
