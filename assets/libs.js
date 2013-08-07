@@ -4,3 +4,4 @@
 //= require libs/jquery-ui.min
 //= require libs/masked-input
 //= require libs/cookie
+;
