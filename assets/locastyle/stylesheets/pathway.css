@@ -1,7 +1,6 @@
 /*** PATH
 **** Passos de algum processo.
 ***/
-
 .pathWay {clear: both;}
 .pathWay ol:after, .pathWay ul:after {content: " "; display: block; clear: both;}
 .pathWay ol, .pathWay ul {margin: 0 0 30px; padding: 0;}

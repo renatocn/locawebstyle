@@ -7,7 +7,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.opensource.org/licenses/GPL-2.0
  */
-
 (function ($, document, undefined) {
 
   var pluses = /\+/g;

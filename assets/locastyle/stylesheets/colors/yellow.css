@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title> - Guia de Hospedagem de Sites</title>
+  <meta charset="utf-8">
+  <meta name='viewport' content='width=device-width,initial-scale=1' />
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+
+  <link href="/locawebstyle/assets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/locawebstyle/assets/locastyle.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/locawebstyle/assets/manual.css" media="screen" rel="stylesheet" type="text/css" />
+
+</head>
+<body class="assets assets_locastyle assets_locastyle_stylesheets assets_locastyle_stylesheets_colors assets_locastyle_stylesheets_colors_yellow">
+
+<!-- topbar header -->
+<header id="topbar" class="clearfix">
+  <div class="limit">
+    <!-- <h1 class="logo"><a href="#"><img src="/assets/img/manual/logo.png" alt="Locaweb Hosting"></a></h1> -->
+    <h1 class="logo"><a href="/">LOCAWEB STYLE</a></h1>
+    <ul class="social-links">
+      <li><a href="#"><img alt="Nosso Facebook" class="img-facebook" src="/locawebstyle/assets/manual/img/ico-facebook.png" /></a>
+      <li><a href="#"><img alt="Nosso Twitter" class="img-twitter" src="/locawebstyle/assets/manual/img/ico-twitter.png" /></a>
+    </ul>
+  </div>
+</header>
+<!-- END topbar header -->  /* line 16, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow a:hover,
+.colorYellow .lnkArrow:hover,
+.colorYellow .lnkSeta:hover,
+.colorYellow [class^="ico-"]:hover,
+.colorYellow [class*=" ico-"]:hover,
+.colorYellow .collapseGroup summary span,
+.colorYellow .boxCollapse h4 span,
+.colorYellow #menuPrincipal > ul > li > a:hover,
+.colorYellow #menuPrincipal .parent > a:hover,
+.colorYellow .carousel-control,
+.colorYellow .serviceName a,
+.colorYellow .innerSideBox [class^="ico-"],
+.colorYellow .innerSideBox [class*="ico-"],
+.colorYellow .listWhite li a:before,
+.colorYellow .boxInfoAction.sought strong,
+.colorYellow .boxInfoAction.sought b {
+  color: #b19b22; }
+
+/* line 47, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow a,
+.colorYellow #menuPrincipal .btMenu a,
+.colorYellow .collapseGroup summary span,
+.colorYellow .boxCollapse h4 span,
+.colorYellow .lnkArrow,
+.colorYellow #menuPrincipal > ul > li > a:hover,
+.colorYellow .boxGray.listDetail a,
+.colorYellow td a,
+.colorYellow #menuPrincipal .parent:hover > a,
+.colorYellow .pagination li.first-child a,
+.colorYellow .pagination li.last-child a,
+.colorYellow .pagination .first a,
+.colorYellow .pagination .prev a,
+.colorYellow .pagination .next a,
+.colorYellow .pagination .last a,
+.colorYellow p a,
+.colorYellow .lnkSeta, .colorYellow .lnkArrow,
+.colorYellow .breadcrumb a,
+.colorYellow [class^="ico-"],
+.colorYellow [class*=" ico-"],
+.colorYellow .pathWay li.active b,
+.colorYellow .pathWay li:hover b,
+.colorYellow .shortcutBox :hover :before,
+.colorYellow .shortcutBox .active :before,
+.colorYellow .chooseBox li:hover [class^="ico-"]:before,
+.colorYellow .chooseBox li:hover [class*="ico-"]:before,
+.colorYellow .chooseBox li.active [class^="ico-"]:before,
+.colorYellow .chooseBox li.active [class*="ico-"]:before {
+  color: #8e7c1b; }
+
+/* line 59, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .boxCollapse header h4,
+.colorYellow .pathWay li.active a,
+.colorYellow .pathWay li:hover a,
+.colorYellow .sidebar h1,
+.colorYellow .chooseBox li:hover p,
+.colorYellow .chooseBox li.active p,
+.colorYellow .shortcutBox div:hover p,
+.colorYellow .shortcutBox div.active p {
+  color: #473e0e; }
+
+/* line 75, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .chooseBox li:hover h4,
+.colorYellow .chooseBox li.active h4,
+.colorYellow .content h2,
+.colorYellow .content h3,
+.colorYellow .content h4,
+.colorYellow .content h5,
+.colorYellow .content h6,
+.colorYellow .shortcutBox h3,
+.colorYellow .shortcutBox h3 a,
+.colorYellow .chooseBox li h4[class^="ico-"]:before,
+.colorYellow .chooseBox li h4,
+.colorYellow .chooseBox li:hover h4,
+.colorYellow .chooseBox li.active h4 {
+  color: #231f07; }
+
+/* line 84, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .progress .bar,
+.colorYellow .pathWay li.active,
+.colorYellow .pathWay li:hover,
+.colorYellow #menuPrincipal .btMenu a:hover,
+.colorYellow #menuPrincipal .btMenu a:active,
+.colorYellow .notification header:before {
+  background-color: #b19b22; }
+
+/* line 93, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow #menuPrincipal,
+.colorYellow .tabs li a:hover,
+.colorYellow .tabs li a:focus,
+.colorYellow .tabs li.active a,
+.colorYellow #menuPrincipal ul li ul,
+.colorYellow .dropdown-menu.listIdent {
+  border-bottom-color: #b19b22; }
+
+/* line 99, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .tabs li.active a,
+.colorYellow .tabs li a:hover,
+.colorYellow .tabs li a:focus {
+  border-top-color: #b19b22; }
+
+/* line 103, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .btn-group.open .btn-primary.dropdown-toggle {
+  background-color: #b19b22; }
+
+/* line 105, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .boxCollapse header {
+  border-left-color: #b19b22; }
+
+/* line 109, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow #menuPrincipal > ul > li.selected > a {
+  background-color: #b19b22; }
+
+/* line 113, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .boxSidebarTitle {
+  background-color: #473e0e; }
+
+/* line 115, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .btn-primary {
+  border: 1px solid #8e7c1b; }
+
+/* line 118, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .pathWay li.active a,
+.colorYellow .pathWay li:hover a {
+  background-color: #efebd3; }
+
+/* line 122, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .chooseBox .active:after {
+  border-top: 13px solid #e0d7a7; }
+
+/* line 123, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .chooseBox .active:before {
+  border-top: 15px solid #b19b22; }
+
+/* line 125, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .chooseBox li:hover,
+.colorYellow .chooseBox li.active {
+  border: 1px solid #e0d7a7; }
+
+/* line 134, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .select2-results .select2-highlighted,
+.colorYellow .select2-results .select2-highlighted:focus,
+.colorYellow .btn-primary,
+.colorYellow .dropdown-menu li > a:hover,
+.colorYellow .dropdown-menu li > a:focus,
+.colorYellow .dropdown-submenu:hover > a {
+  background-color: #8e7c1b;
+  background-image: -moz-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: -webkit-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: -o-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: -ms-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: linear-gradient(to bottom, #b19b22 0%, #8e7c1b 100%); }
+
+/* line 147, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .shortcutBox div.active,
+.colorYellow .shortcutBox div:hover,
+.colorYellow .chooseBox li:hover,
+.colorYellow .chooseBox li.active {
+  border-color: #b19b22;
+  background-color: #e0d7a7;
+  background: -moz-linear-gradient(top, white 0%, #e0d7a7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #e0d7a7));
+  background: -webkit-linear-gradient(top, white 0%, #e0d7a7 100%);
+  background: -o-linear-gradient(top, white 0%, #e0d7a7 100%);
+  background: -ms-linear-gradient(top, white 0%, #e0d7a7 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #e0d7a7 100%); }
+
+/* line 159, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .gradient {
+  background-color: #efebd3;
+  background-image: -moz-linear-gradient(top, #f7f5e9 0%, #efebd3 100%);
+  background-image: -webkit-linear-gradient(top, #f7f5e9 0%, #efebd3 100%);
+  background-image: -o-linear-gradient(top, #f7f5e9 0%, #efebd3 100%);
+  background-image: -ms-linear-gradient(top, #f7f5e9 0%, #efebd3 100%);
+  background-image: linear-gradient(to bottom, #f7f5e9 0%, #efebd3 100%); }
+
+/* line 168, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow.ie9 .gradient {
+  background-color: #efebd3; }
+
+/* line 171, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .pagination .current,
+.colorYellow .pagination .active a {
+  border-color: #b19b22;
+  background-color: #b19b22;
+  background-image: -moz-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: -webkit-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: -o-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: -ms-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: linear-gradient(to bottom, #b19b22 0%, #8e7c1b 100%); }
+
+/* line 181, ../../assets/locastyle/stylesheets/colors/theme_base.scss */
+.colorYellow .progress .bar {
+  background-color: #8e7c1b;
+  background-image: -moz-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: -webkit-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: -o-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: -ms-linear-gradient(top, #b19b22 0%, #8e7c1b 100%);
+  background-image: linear-gradient(to bottom, #b19b22 0%, #8e7c1b 100%); }
+
+
+
+<!-- Other Guides -->
+<!-- <section class="other-guides cBoth">
+	<div class="limit">
+		<h1>Outros guias Locaweb</h1>
+		<ul>
+			<li>
+				<a href="#">
+					<img src="images/thumb-email.png">
+					<h2>Email Marketing</h2>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<img src="images/thumb-email.png">
+					<h2>Cloud e Servidores dedicados</h2>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/thumb-email.png">
+					<h2>Criador de sites mobile</h2>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/thumb-email.png">
+					<h2>Email Locaweb</h2>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="images/thumb-email.png">
+					<h2>Registro de Domínio</h2>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section> -->
+<!-- END Other Guides -->
+
+
+
+<!-- footer -->
+<footer class="footer">
+  <div class="limit">
+    <h1 class="logo">
+      <a href="http://developer.locaweb.com.br/locawebstyle/"><img alt="Locaweb Style" class="img-logo-footer" src="/locawebstyle/assets/manual/img/logo-footer.png" /></a>
+    </h1>
+    <p>Copyright © 1997-2013 Locaweb Serviços de Internet S/A. <br>Todo o conteúdo deste site é de uso exclusivo da Locaweb.</p>
+  </div>
+</footer>
+<!-- END footer-->
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32633790-2']);
+  _gaq.push(['_setDomainName', 'locaweb.com.br']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+  <script src="/locawebstyle/assets/libs.js" type="text/javascript"></script>
+  <script src="/locawebstyle/assets/locastyle.js" type="text/javascript"></script>
+  <script src="/locawebstyle/assets/bootstrap.js" type="text/javascript"></script>
+  <script src="/locawebstyle/assets/manual.js" type="text/javascript"></script>
+
+</body>
+</html>

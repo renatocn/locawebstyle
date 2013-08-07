@@ -1,7 +1,6 @@
 /** Tamanhos padrão de Smartphones
 *** 320 x 480
 **/
-
 @media screen and (max-width:767px) {
   #select_themes {display: none;}
   

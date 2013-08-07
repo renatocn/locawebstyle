@@ -21,4 +21,3 @@
   $('.footerTop .ico-Telefone').attr('onclick', "_gaq.push(['_trackEvent', 'Atendimento', 'Clique', 'Telefone']);"); // link Telefone do Footer
   $('.footerTop .lnkArrow.lnkArrowWhite').attr('onclick', "_gaq.push(['_trackEvent', 'Atendimento', 'Clique', 'VerFormasAtendimento']);"); // Link Ver Outras Formas
 
-;

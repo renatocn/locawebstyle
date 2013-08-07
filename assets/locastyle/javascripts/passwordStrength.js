@@ -58,4 +58,3 @@ $(function(){
 		return $("#user_password, #account_password").passwordStrength();
 	});
 })
-;

@@ -1,7 +1,6 @@
 /***
 **** BOX Collpase
 ***/
-
 .boxGray > .lnkArrow {margin: 0 15px 10px;}
 p + .boxCollapse {margin-top: 30px;}
 .collapse p + .btn {margin: 10px 0 5px;}

@@ -1,5 +1,4 @@
 /** Resolve bug quando era colocado icon no botões de dropdown **/
-
 .btn-group > .btn + .dropdown-toggle {vertical-align: bottom;}
 
 [class*="btn"] {

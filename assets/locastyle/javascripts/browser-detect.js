@@ -14,4 +14,3 @@ if ($.browser.msie) {
 } else if ($.browser.webkit) {
   $("html").addClass("webkit");
 }
-;
