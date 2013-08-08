@@ -1,3 +1,1 @@
-//= require manual/vendor/prettify/src/prettify
-//= require manual/scripts
-;
+$(document).ready(function(){prettyPrint()});
