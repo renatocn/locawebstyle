@@ -61,7 +61,7 @@
 		<li><a href="/locawebstyle/manual/praticas-padroes/html">HTML</a></li>
 		<li><a href="/locawebstyle/manual/praticas-padroes/css">CSS</a></li>
 		<li><a href="/locawebstyle/manual/praticas-padroes/javascript">Javascript</a></li>
-    <li><a href="/locawebstyle/manual/praticas-padroes/acessibilidade/tabindex">Acessibilidade</a></li>
+    <!-- <li><a href="/locawebstyle/manual/praticas-padroes/acessibilidade/tabindex">Acessibilidade</a></li> -->
 	</ul>
 </nav>
 
@@ -69,17 +69,14 @@
 
 
 			<article class="text col-lg-9 col-md-9">
-				<!--
-https://github.com/necolas/idiomatic-css/
- -->
+				<!-- https://github.com/necolas/idiomatic-css/ -->
+<header>
+	<h1>Boas práticas de CSS</h1>
+	<h3>Entenda como escrever código CSS de forma consciente.</h3>
+</header>
 
-  <header>
-    <h1>Boas práticas de CSS</h1>
-    <h3>Entenda como escrever código CSS de forma consciente.</h3>
-  </header>
-
-	<h2>Cores</h2>
-	<p>Sempre que utilizar uma cor hexadecimal que tenha repetição de valores, use sempre o valor de atalho, assim:</p>
+<h2>Cores</h2>
+<p>Sempre que utilizar uma cor hexadecimal que tenha repetição de valores, use sempre o valor de atalho, assim:</p>
 
 <pre class="lang-css prettyprint linenums">
 /** Recomendado **/
@@ -89,24 +86,24 @@ p {color: #AAA;}
 p {color: #AAAAAA;}
 </pre>
 
-	<h3>RGBA</h3>
-	<p>Sempre que possível, utilize RGBA e mantenha o fallback para browsers antigos. Um exemplo:</p>
+<h3>RGBA</h3>
+<p>Sempre que possível, utilize RGBA e mantenha o fallback para browsers antigos. Um exemplo:</p>
 
 <pre class="lang-css prettyprint linenums">
 p { color: rgba(0, 0, 0, 0.5); }
 .no-rgba p { color: #000; }
 </pre>
 
-	<h2>Aspas</h2>
-	<p>Utilizamos ASPAS DUPLAS no CSS.</p>
+<h2>Aspas</h2>
+<p>Utilizamos ASPAS DUPLAS no CSS.</p>
 
 <pre class="lang-css prettyprint linenums">
 input[type="checkout"] { ... }
 div:after { content: " "; }
 </pre>
 
-	<h2>Comentários</h2>
-	<p>Para uma seção:</p>
+<h2>Comentários</h2>
+<p>Para uma seção:</p>
 
 <pre class="lang-css prettyprint linenums">
 /*** HEADER
@@ -114,28 +111,26 @@ div:after { content: " "; }
 ***/
 </pre>
 
-	<p>Nunca use comentários na mesma linha da propriedade:</p>
+<p>Nunca use comentários na mesma linha da propriedade:</p>
 
 <pre class="lang-css prettyprint linenums">
 p {color: #FFF;} /** Nunca use comentários assim **/
 p {color: #FFF; /** Nunca use comentários assim **/ }
 </pre>
 
-	<p>Assim é melhor:</p>
+<p>Assim é melhor:</p>
 
 <pre class="lang-css prettyprint linenums">
 /** Assim é melhor **/
 p {
-color: #FFF;
-background: red;
-margin: 0;
+	color: #FFF;
+	background: red;
+	margin: 0;
 
-/** Assim também é bom **/
-padding: 0;
+	/** Assim também é bom **/
+	padding: 0;
 }
 </pre>
-
-
 			</article>
 		</div>
 
