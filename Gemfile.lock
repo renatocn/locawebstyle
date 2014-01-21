@@ -8,6 +8,11 @@ GIT
       multi_json (~> 1.0)
       rack-livereload
 
+PATH
+  remote: ../locastyle-gem
+  specs:
+    locastyle (0.0.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -133,6 +138,7 @@ PLATFORMS
 DEPENDENCIES
   eco
   jasmine
+  locastyle!
   middleman (~> 3.2.0)
   middleman-blog
   middleman-gh-pages

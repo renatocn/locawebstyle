@@ -11,3 +11,5 @@ gem "nokogiri"
 gem "middleman-livereload", :github => "middleman/middleman-livereload"
 gem 'therubyracer' # faster JS compiles
 gem 'oj' # faster JS compiles
+
+gem 'locastyle', :path => "../locastyle-gem"
