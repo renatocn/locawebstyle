@@ -6,8 +6,8 @@
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
 
-  <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/1.2.15/bootstrap/css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/1.2.15/stylesheets/locastyle.css">
+  <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/1.2.17/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="//assets.locaweb.com.br/locastyle/1.2.17/stylesheets/locastyle.css">
   <link rel="stylesheet" type="text/css" href="/locawebstyle/v1/assets/legacy/stylesheets/manual.css">
 
 </head>
@@ -39,10 +39,10 @@
 	    <div class="navbar">
       <div class="navbar-inner">
         <ul class="nav">
-          <li><a href="/locawebstyle/v1/manual/introducao/informacoes-iniciais">Introdução</a></li>
+          <li><a href="/locawebstyle/v1/manual/introducao/como-usar">Introdução</a></li>
           <li><a href="/locawebstyle/v1/manual/componentes/abas">Componentes</a></li>
           <li><a href="/locawebstyle/v1/manual/formularios/campos">Formulários</a></li>
-          <li><a href="/locawebstyle/v1/manual/aplicacoes/busca-avancada">Aplicações</a></li>
+          <li><a href="/locawebstyle/v1/manual/aplicacoes/box-com-colunas">Aplicações</a></li>
           <li><a href="/locawebstyle/v1/manual/layout/cores-principais">Layout</a></li>
           <li><a href="/locawebstyle/v1/manual/acessibilidade/tabindex">Acessibilidade</a></li>
           <li><a target="_blank" href="/locawebstyle/v1/manual/elementos">Cartilha de Elementos</a></li>
@@ -55,12 +55,13 @@
 <nav>
 	<h1>Informações</h1>
 	<ul>
+		<li><a href="/locawebstyle/v1/manual/aplicacoes/box-com-colunas">Box com colunas</a></li>
 		<li><a href="/locawebstyle/v1/manual/aplicacoes/busca-avancada">Busca avançada</a></li>
 		<!-- <li><a href="/locawebstyle/v1/manual/aplicacoes/chamada-varios-links">Chamada vários links</a></li> -->
 		<li><a href="/locawebstyle/v1/manual/aplicacoes/collapse">Collapse</a></li>
 		<li><a href="/locawebstyle/v1/manual/aplicacoes/paginacao">Filtro exibição e paginação</a></li>
 		<li><a href="/locawebstyle/v1/manual/aplicacoes/lista">Lista</a></li>
-		<li><a href="/locawebstyle/v1/manual/aplicacoes/alertas">Alertas e Notificações</a></li>
+		<li><a href="/locawebstyle/v1/manual/aplicacoes/soma-valores">Soma Valores</a></li>
 		<li><a href="/locawebstyle/v1/manual/aplicacoes/tour-guiado">Tour Guiado</a></li>
 	</ul>
 </nav>
@@ -76,6 +77,7 @@
 	</header>
 
 	<p>Collapses são usados para organizar grandes quantidades de conteúdo que trazem uma informação ou comportamentos do sistema para a interação com o usuário. Veja os exemplos abaixo:</p>
+
 
 	<h3>Collapses complexos</h3>
 	<p>Geralmente estes collapses são utilizados para conter grandes quantidades de informação, formulários e etc. São usados em telas de configurações ou onde precisamos seccionar muita informação referente a um mesmo assunto.</p>
@@ -235,6 +237,55 @@
 </pre>
 
 
+	<h2>Collapse com navegação</h2>
+	<div class="accordion" id="nomeGrupoAccordion">
+		<div class="boxCollapse accordion-group accordion-heading">
+			<header class="noMarginBottom">
+				<h4>Passo 1</h4>
+				<p>Descrição passo 1</p>
+			</header>
+			<div id="passo1" class="accordion-body collapse in">
+				<p>
+					Instruções Passo 1
+				</p>
+				<div class="btn-group">
+					<button class="btn btn-primary accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo2">Ir para o passo 2 </button>
+				</div>
+				<br>
+			</div>
+		</div>
+
+		<div class="boxCollapse accordion-group accordion-heading">
+			<header class="noMarginBottom">
+				<h4>Passo 2</h4>
+				<p>Descrição passo 2</p>
+			</header>
+			<div id="passo2" class="accordion-body collapse">
+				<p>
+					Instruções passo 2
+				</p>
+				<div class="btn-group">
+					<button class="btn accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo1"> Voltar para o passo 1 </button><button class="btn btn-primary accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo3"> Ir para o passo 3 </button>
+				</div>
+			</div>
+		</div>
+
+		<div class="boxCollapse accordion-group accordion-heading">
+			<header class="noMarginBottom">
+				<h4>Passo 3</h4>
+				<p>Descrição passo 3</p>
+			</header>
+			<div id="passo3" class="accordion-body collapse">
+				<p>
+					Instruções passo 3
+				</p>
+				<div class="btn-group">
+					<button class="btn accordion-toggle dInlineBlock" data-toggle="collapse" data-parent="#nomeGrupoAccordion" href="#passo2">Voltar para o passo 2 </button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<h2>Utilização</h2>
 	<p>Apenas coloque <strong>data-toggle="collapse"</strong> e o <strong>data-target</strong> para dar o controle de um elemento com collapse. Lembre-se de colocar a classe <strong>collapse</strong> para o elemento que terá o collapse. Se você quiser um determinado collapse já apareça aberto, insira a classe <strong>in</strong>.</p>
 
@@ -242,9 +293,7 @@
 
 	<p>Se quiser ativar manualmente, utilize o código abaixo:</p>
 
-	<pre class="lang-javascript prettyprint linenums">
-	$(".collapse").collapse();
-	</pre>
+	<pre class="lang-javascript prettyprint linenums">$(".collapse").collapse();</pre>
 
 	<h3>Eventos</h3>
 	<table class="table table-bordered table-striped">
@@ -277,7 +326,6 @@
 	</table>
 
 </article>
-
 </section>
 <!-- END post content -->
 
@@ -332,7 +380,7 @@
     <h1 class="logo">
       <a href="http://developer.locaweb.com.br/locawebstyle/"><img alt="Locaweb Style" class="img-logo-footer" src="../../../../assets/images/manual/logo-footer.png" /></a>
     </h1>
-    <p>Copyright © 1997-2013 Locaweb Serviços de Internet S/A. <br>Todo o conteúdo deste site é de uso exclusivo da Locaweb.</p>
+    <p>Copyright © 1997-2014 Locaweb Serviços de Internet S/A. <br>Todo o conteúdo deste site é de uso exclusivo da Locaweb.</p>
   </div>
 </footer>
 <!-- END footer-->
@@ -348,11 +396,11 @@
   ga('send', 'pageview');
 
 </script>
-  <script src="//assets.locaweb.com.br/locastyle/1.2.15/javascripts/libs.js"></script>
-  <script src="//assets.locaweb.com.br/locastyle/1.2.15/javascripts/locastyle.js"></script>
+  <script src="//assets.locaweb.com.br/locastyle/1.2.17/javascripts/libs.js"></script>
+  <script src="//assets.locaweb.com.br/locastyle/1.2.17/javascripts/locastyle.js"></script>
   <script src="/locawebstyle/v1/assets/legacy/javascripts/manual.js"></script>
 
-  <script src="//assets.locaweb.com.br/locastyle/1.2.15/bootstrap/js/bootstrap.js"></script>
+  <script src="//assets.locaweb.com.br/locastyle/1.2.17/bootstrap/js/bootstrap.js"></script>
   <script src="/locawebstyle/v1/assets/legacy/prettify/prettify.js"></script>
 </body>
 </html>
