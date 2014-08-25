@@ -37,3 +37,6 @@ Vagrantfile
 deploy
 
 Gemfile.lock
+
+# NodeJS modules
+node_modules
