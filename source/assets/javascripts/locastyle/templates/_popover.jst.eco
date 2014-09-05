@@ -1,4 +1,4 @@
-<div id="ls-popover-<%= @uniqueId %>" class="ls-popover ls-popover-<%= @placement %> <%= @customClasses %>" style="top:<%= @position.top %>px; left:<%= @position.left %>px;<% if @lsPopover == 'open': %>display: block;<% end %>">
+<div class="ls-popover ls-popover-<%= @placement %> <%= @customClasses %>">
   <% if @title :%>
   <div class="ls-popover-header">
     <h3 class="title-3"> <%= @title %> </h3>
@@ -8,3 +8,4 @@
   <% end %>
   <div class="ls-popover-content"> <%- @content %> </div>
 </div>
+

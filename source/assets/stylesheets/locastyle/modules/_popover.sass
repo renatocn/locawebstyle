@@ -1,29 +1,31 @@
 $arrowWidth: 10px
 $colorArrow: #fff
 $colorBorderPop: rgba(0, 0, 0, 0.2)
+$radiusDefault: 4px
 
 .ls-popover
   position: absolute
+  top: 0
+  left: 0
   z-index: 17
   max-width: 376px
   background-color: #fff
   border: 1px solid $colorBorderPop
-  border-radius: $default-radius
+  border-radius: $radiusDefault
   box-shadow: 0 5px 10px $colorBorderPop
   background-clip: padding-box
-  display: none
 
   &.ls-popover-top
-    +transform( translateX( -50% ) translateY(-100%) )
-
-  &.ls-popover-bottom
-    +transform( translateX( -50% ) )
+    margin-top: -12px
 
   &.ls-popover-right
-    +transform( translateY( -50% ) )
+    margin-left: 12px
+
+  &.ls-popover-bottom
+    margin-top: 12px
 
   &.ls-popover-left
-    +transform( translateX( -100% ) translateY( -50% ) )
+    margin-left: -12px
 
   &:after,
   &:before
@@ -94,17 +96,18 @@ $colorBorderPop: rgba(0, 0, 0, 0.2)
   .ls-popover-header [class*="title-"]
     padding: 13px 20px 12px
     margin: 0
-    font-size: remtopx(1)
+    font-size: 1rem
     background-color: #f7f7f7
     border-bottom: 1px solid #ebebeb
-    border-radius: $default-radius $default-radius 0 0
+    border-radius: $radiusDefault $radiusDefault 0 0
 
   .ls-popover-content
     color: #555
     padding: 20px
-    font-size: remtopx(.88)
+    font-size: 0.88rem
     text-overflow: ellipsis
     overflow: hidden
 
     ul li
       margin-bottom: 5px
+
