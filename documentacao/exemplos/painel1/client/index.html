@@ -26,8 +26,8 @@
     <!-- Dropdown com detalhes da conta de usuário -->
     <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
       <a href="#" class="ls-ico-user">
-        Joey
-        <small>(Goldstein)</small>
+        João
+      <small>(fmolina)</small>
       </a>
       <nav class="ls-dropdown-nav ls-user-menu">
         <ul>
@@ -41,12 +41,54 @@
   </div>
 
   <span class="ls-show-sidebar ls-ico-menu"></span>
-  <span class="ls-show-notifications ls-ico-question"></span>
 
   <!-- Nome do produto/marca -->
-    <h1 class="ls-brand-name"><a class="ls-ico-earth" href="home">Revenda do Email Marketing</a></h1>
+    <h1 class="ls-brand-name"><a class="ls-ico-earth" href="../home">Revenda do Email Marketing</a></h1>
 </div>
 
+
+  <aside class="ls-sidebar">
+        <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
+    <a href="#" class="ls-ico-user">
+      João
+      <small>(fmolina)</small>
+    </a>
+    <nav class="ls-dropdown-nav ls-user-menu">
+      <ul>
+        <li><a href="#">Meus dados</a></li>
+        <li><a href="#">Faturas</a></li>
+        <li><a href="#">Planos</a></li>
+        <li><a href="#">Sair</a></li>
+       </ul>
+    </nav>
+  </div>
+  <!-- Dropdown com detalhes da conta de usuário -->
+  <div class="ls-area-account ls-ico-user">
+    <h2 class="ls-title-2">Administrando</h2>
+    <h3 class="ls-title-3">João da Silva</h3>
+    <a href="/locawebstyle/documentacao/exemplos/painel1/pre-painel" class="ls-btn-xs ls-btn-dark">VER TODOS</a>
+  </div>
+  <nav class="ls-menu">
+    <ul>
+       <li><a href="/locawebstyle/documentacao/exemplos/painel1/home" class="ls-ico-home">Página inicial</a></li>
+       <!-- <li><a href="/locawebstyle/documentacao/exemplos/painel1/base" class="ls-ico-home">Primeiros passos</a></li> -->
+       <li><a href="/locawebstyle/documentacao/exemplos/painel1/clients" class="ls-ico-users">Clientes</a></li>
+       <li><a href="/locawebstyle/documentacao/exemplos/painel1/stats" class="ls-ico-stats">Relatórios da revenda</a></li>
+       <li class="ls-submenu">
+        <a href="#" class="ls-ico-cog">Configurações</a>
+        <ul>
+          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel1/config-domain">Domínios da Revenda</a></li>
+          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel1/config-email">E-mail de Remetente</a></li>
+          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel1/config-aspect">Aparência</a></li>
+          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel1/config-answer">Atendimento</a></li>
+          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel1/config-api">Chave de acesso para API</a></li>
+        </ul>
+      </li>
+     </ul>
+  </nav>
+
+
+  </aside>
 
   <main class="ls-main ">
     <div class="container-fluid">
@@ -68,7 +110,7 @@
   </div>
 
   <form action="" class="ls-form row" data-ls-module="form">
-    <fieldset id="domain-form" class="ls-form-disable">
+    <fieldset id="domain-form" class="ls-form-disable ls-form-text">
       <label class="ls-label col-md-6 col-lg-8">
         <b class="ls-label-text">Nome</b>
         <input type="text" value="Fulano de tal" required>
@@ -116,7 +158,7 @@
 
   <div class="row">
 
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6">
       <div class="ls-box">
         <strong class="ls-board-info">9 <small>milhões</small></strong>
         <small>Válido até 01/01/2014</small>
@@ -124,21 +166,21 @@
       </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6">
       <div class="ls-box">
         <h6 class="ls-title-4">Avulso</h6>
         <strong class="ls-board-info">0</strong>
       </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6">
       <div class="ls-box">
         <h6 class="ls-title-4">Distribuído</h6>
         <strong class="ls-board-info">0</strong>
       </div>
     </div>
 
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-6">
       <div class="ls-box">
         <h6 class="ls-title-4 color-default">Utilizados</h6>
         <strong class="ls-board-info">10.743</strong>
@@ -208,7 +250,7 @@
 
         <div class="ls-tab-content child1 ls-active">
           <p>Contratação x uso</p>
-          <img src="/locawebstyle/assets/images/graph-example.jpg">
+          <div id="panel-charts"></div>
         </div>
 
         <div class="ls-tab-content child2">
@@ -260,7 +302,7 @@
 
         <div class="ls-tab-content child1 ls-active">
           <p>Estatísticas de envios</p>
-          <img src="/locawebstyle/assets/images/graph-example.jpg">
+          <div id="panel-charts-client"></div>
         </div>
 
         <div class="ls-tab-content child2">
@@ -367,7 +409,7 @@
 
 <!-- Modal de senha -->
 <div class="ls-modal" id="editPassword">
-  <form action="" class="ls-form">
+  <form action="#change-password" class="ls-form">
     <div class="ls-modal-box">
       <div class="ls-modal-header">
         <button data-dismiss="modal">×</button>
@@ -386,7 +428,7 @@
       </div>
       <div class="ls-modal-footer">
         <button type="submit" class="ls-btn-primary">Salvar</button>
-        <a class="ls-btn ls-float-right" data-dismiss="modal">Cancelar</a>
+        <a href="#atualizar-senha" class="ls-btn ls-float-right" data-dismiss="modal">Cancelar</a>
       </div>
     </div>
   </form>
@@ -492,7 +534,7 @@
     <footer class="ls-footer" role="contentinfo">
   <nav class="ls-footer-menu">
       <h2 class="ls-title-footer">suporte e ajuda</h2>
-      <ul>
+      <ul class="ls-footer-list">
         <li>
           <a href="#" target="_blank" class="bg-customer-support">
             <span class="visible-lg">Atendimento</span>
@@ -517,78 +559,36 @@
   </nav>
   <div class="ls-footer-info">
     <span class="last-access ls-ico-screen"><strong>Último acesso: </strong>99/99/9999 99:99:99</span>
-    <div class="set-ip"><span class="set-ip"><strong>IP:</strong> 000.00.00.000</span></div>
+    <div class="set-ip"><strong>IP:</strong> 000.00.00.000</div>
     <p class="ls-copy-right">Copyright © 1997-2014 Serviços de Internet S/A.</p>
   </div>
 </footer>
 
   </main>
 
-  <aside class="ls-sidebar">
-        <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
-    <a href="#" class="ls-ico-user">
-      Denis
-      <small>(Floyd)</small>
-    </a>
-    <nav class="ls-dropdown-nav ls-user-menu">
-      <ul>
-        <li><a href="#">Meus dados</a></li>
-        <li><a href="#">Faturas</a></li>
-        <li><a href="#">Planos</a></li>
-        <li><a href="#">Sair</a></li>
-       </ul>
-    </nav>
-  </div>
-  <!-- Dropdown com detalhes da conta de usuário -->
-  <div class="ls-area-account ls-ico-user">
-    <h2 class="ls-title-2">Administrando</h2>
-    <h3 class="ls-title-3">Carley.Mangum</h3>
-    <a href="/locawebstyle/documentacao/exemplos/painel1/pre-painel" class="ls-btn-xs ls-btn-dark">VER TODOS</a>
-  </div>
-  <nav class="ls-menu">
-    <ul>
-       <li><a href="/locawebstyle/documentacao/exemplos/painel1/home" class="ls-ico-home">Página inicial</a></li>
-       <!-- <li><a href="/locawebstyle/documentacao/exemplos/painel1/base" class="ls-ico-home">Primeiros passos</a></li> -->
-       <li><a href="/locawebstyle/documentacao/exemplos/painel1/clients" class="ls-ico-users">Clientes</a></li>
-       <li><a href="/locawebstyle/documentacao/exemplos/painel1/stats" class="ls-ico-stats">Relatórios da revenda</a></li>
-       <li class="ls-submenu">
-        <a href="#" class="ls-ico-cog">Configurações</a>
-        <ul>
-          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel1/config-domain">Domínios da Revenda</a></li>
-          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel1/config-email">E-mail de Remetente</a></li>
-          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel1/config-aspect">Aparência</a></li>
-          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel1/config-answer">Atendimento</a></li>
-          <li><a class="ls-submenu-item" href="/locawebstyle/documentacao/exemplos/painel1/config-api">Chave de acesso para API</a></li>
-        </ul>
-      </li>
-     </ul>
-  </nav>
-
-
-  </aside>
 
   <aside class="ls-notification">
     <nav class="ls-notification-list" id="ls-notification-curtain">
       <h3 class="ls-title-2">Notificações</h3>
       <ul>
           <li class="ls-dismissable">
-            <a href="#">Fugiat sit omnis aut aliquam numquam et vel occaecati sequi est officiis</a>
+            <a href="#">Possimus occaecati quia quis voluptas est necessitatibus eligendi ex neque</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Provident voluptatem non odio rerum soluta ea est id alias autem quo possimus</a>
+            <a href="#">Eaque fugiat numquam qui vel</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Molestiae et beatae natus nulla suscipit aut commodi molestiae corporis voluptas laboriosam sequi</a>
+            <a href="#">Corrupti amet libero ea omnis eveniet tempora sed consequuntur et et</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Voluptatem rerum ducimus sequi vel temporibus laborum et voluptate maxime praesentium numquam cum cupiditate</a>
+            <a href="#">Reprehenderit dolores doloremque accusantium dolor officiis est</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
           <li class="ls-dismissable">
-            <a href="#">Quisquam consectetur unde aut hic fugiat sit ducimus</a>
+            <a href="#">Ut omnis porro recusandae quo</a>
             <a href="#" data-ls-module="dismiss" class="ls-ico-close ls-close-notification"></a>
           </li>
       </ul>
@@ -597,8 +597,8 @@
     <nav class="ls-notification-list" id="ls-help-curtain">
       <h3 class="ls-title-2">Feedback</h3>
       <ul>
-          <li><a href="#">> ipsa corporis sunt nesciunt at voluptatem</a></li>
-          <li><a href="#">> dolorem error possimus voluptas voluptatem omnis</a></li>
+          <li><a href="#">> incidunt ipsam est aut quae et</a></li>
+          <li><a href="#">> qui ipsa accusamus et nam aut</a></li>
       </ul>
     </nav>
     <nav class="ls-notification-list" id="ls-feedback-curtain">
@@ -613,9 +613,13 @@
     </nav>
   </aside>
 
-  <script src="../../../../assets/javascripts/libs/jquery-2.1.0.min.js" type="text/javascript"></script>
-  <script src="../../../../assets/javascripts/locastyle.js" type="text/javascript"></script>
-  <script src="../../../../assets/javascripts/example.js" type="text/javascript"></script>
+  <script src="../../../../assets/javascripts/libs/jquery-2.1.0.min.js" type="text/javascript"></script><script src="../../../../assets/javascripts/example.js" type="text/javascript"></script><script src="../../../../assets/javascripts/locastyle.js" type="text/javascript"></script><script src="//code.highcharts.com/highcharts.js" type="text/javascript"></script><script src="../../../../assets/javascripts/docs/panel-charts.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(window).load(function() {
+      locastyle.browserUnsupportedBar.init();
+    });
+  </script>
 
 </body>
 </html>

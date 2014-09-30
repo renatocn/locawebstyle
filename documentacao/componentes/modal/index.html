@@ -31,6 +31,7 @@
   <ul>
     <li><a href="/locawebstyle">Home</a></li>
     <li><a href="/locawebstyle/documentacao/introducao/">Documentação</a></li>
+    <li><a href="/locawebstyle/documentacao/introducao/boilerplate/">Comece por aqui</a></li>
     <li><a href="/locawebstyle/changelog">Changelog</a></li>
     <li><a href="http://locaweb.github.io/locawebstyle-v1/">Documentação V1</a></li>
     <li><a href="http://locaweb.github.io/locawebstyle-v2/">Documentação V2</a></li>
@@ -64,7 +65,8 @@
 
 <div class="doc-content container">
   <div class="row">
-    <aside class="col-md-3">
+    <aside class="doc-sidebar col-md-3">
+<div class="doc-sidebar-inner">
   <nav class="doc-sidebar-menu">
     <ul>
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/'>Abas</a></li>
@@ -84,9 +86,9 @@
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/tags/'>Tags</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/tooltip/'>Tooltip</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/tour-guiado/'>Tour Guiado</a></li>
-      <li class=''><a class='' href='/locawebstyle/documentacao/componentes/rastreando-eventos/'>Rastreando eventos</a></li>
     </ul>
   </nav>
+</div>
 </aside>
 
 
@@ -99,6 +101,7 @@
 
   <h3 class="ls-title-4">Criando modal</h3>
   <p>Você precisa passar no <code>data-target</code> o ID da modal.</p>
+
   <table class="ls-table">
     <thead>
       <tr>
@@ -200,6 +203,42 @@
     </tbody>
   </table>
 
+  <div class="ls-box ls-box-gray">
+    <h2 class="doc-title-4">Acessibilidade</h2>
+    <p>Via javascript, o modal recebe <code>focus()</code> e o atributo <code>tabindex="-1"</code> além de ser adicionada as ARIAs abaixo:</p>
+    <table class="ls-table">
+      <thead>
+        <tr>
+          <th>Estado do modal</th>
+          <th>Elemento</th>
+          <th>Wai-aria</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Escondido</td>
+          <td>.ls-modal</td>
+          <td>aria-hidden="true"</td>
+        </tr>
+        <tr>
+          <td>Exibindo</td>
+          <td>.ls-modal</td>
+          <td>aria-hidden="false"</td>
+        </tr>
+        <tr>
+          <td>Aberto/Fechado</td>
+          <td>.ls-modal</td>
+          <td>role="dialog"</td>
+        </tr>
+        <tr>
+          <td>Aberto/Fechado</td>
+          <td>.ls-modal</td>
+          <td>aria-labelledby="ID_DO_TITULO"</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
   <h3 class="doc-title-3">Abrindo a modal via URL</h3>
     <p>Para abrir a modal automaticamente assim que a página for carregada, basta passar na URL o nome da modal. Tente aqui mesmo, no final da URL desta página, adicione <code>#myAwesomeModal</code> e aperte ENTER.</p>
 
@@ -213,12 +252,7 @@
       <h4 class="ls-modal-title">Modal title</h4>
     </div>
     <div class="ls-modal-body">
-      <p>
-        <a href="#" class="ls-btn-primary" data-ls-module="popover" data-title="Popover na modal" data-content="É um popover na modal" data-placement="top">
-          Popover
-        </a>
-      </p>
-      <p>Qui deleniti dolorem perferendis. Recusandae est fuga labore perspiciatis perspiciatis consequatur cum dolor omnis et commodi iste atque voluptate. Ea sed tempora veritatis ut quia non architecto sapiente perspiciatis voluptatibus sunt nemo. Cum ut provident qui quas corporis temporibus. Consequatur esse assumenda quisquam ipsa quisquam ipsam quidem qui eos. Deserunt voluptas harum tenetur. Id excepturi doloremque quia placeat nostrum rerum quis totam. Est placeat pariatur id natus quod. Laudantium voluptate expedita vero atque unde nisi natus sit distinctio fuga excepturi tempore. Saepe quia doloremque blanditiis est sed quidem in sequi rem ipsum. Similique magni aliquam in dignissimos numquam laboriosam. Natus voluptatem aspernatur cum quidem ut qui facilis. Aut incidunt rem architecto voluptas est et quos et. Magnam omnis a perferendis distinctio aliquid quaerat molestiae iste eligendi laboriosam. Velit repellendus eius repellat eum sint incidunt blanditiis voluptas cupiditate exercitationem quas ullam sit</p>
+      <p>Veritatis eius quos commodi et eaque et dolore. Harum quo excepturi suscipit ea. Inventore aperiam eum quo dolores animi ratione quod error. Animi nihil possimus et officia. Aliquid ab libero vitae tempora occaecati sit recusandae est autem excepturi voluptatum voluptatibus consequatur. Tempore eligendi laborum nihil sapiente nihil fugit recusandae sapiente suscipit aut doloremque quae optio exercitationem. Maxime sit enim assumenda. Quod autem cupiditate debitis nemo amet nemo odio ut libero praesentium quae quibusdam similique. Fugit dicta repudiandae incidunt quia nobis possimus aperiam. Non ut beatae incidunt voluptas ut dolores voluptatem delectus vero soluta eum consequatur provident. Reiciendis nobis impedit maxime rerum nihil error quia dolorem nihil mollitia consectetur sapiente voluptates. Et eos in maiores necessitatibus placeat optio aliquam commodi minus. Aspernatur et totam qui accusamus magnam autem ut. Quasi ratione est nihil. Rerum alias quidem soluta nobis similique sit incidunt</p>
     </div>
     <div class="ls-modal-footer">
       <button class="ls-btn ls-float-right" data-dismiss="modal">Close</button>
@@ -244,26 +278,16 @@
 14
 15
 16
-17
-18
-19
-20
-21
-22</pre></td><td class="code"><pre><span class="nt">&lt;button</span> <span class="na">data-ls-module=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#myAwesomeModal"</span> <span class="na">class=</span><span class="s">"ls-btn-primary"</span><span class="nt">&gt;</span>Ative a modal<span class="nt">&lt;/button&gt;</span>
+17</pre></td><td class="code"><pre><span class="nt">&lt;button</span> <span class="na">data-ls-module=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#myAwesomeModal"</span> <span class="na">class=</span><span class="s">"ls-btn-primary"</span><span class="nt">&gt;</span>Ative a modal<span class="nt">&lt;/button&gt;</span>
 
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-modal fade"</span> <span class="na">id=</span><span class="s">"myAwesomeModal"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-modal fade test"</span> <span class="na">id=</span><span class="s">"myAwesomeModal"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-modal-box"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-modal-header"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;button</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/button&gt;</span>
       <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ls-modal-title"</span><span class="nt">&gt;</span>Modal title<span class="nt">&lt;/h4&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-modal-body"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;p&gt;</span>
-        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ls-btn-primary"</span> <span class="na">data-ls-module=</span><span class="s">"popover"</span> <span class="na">data-title=</span><span class="s">"Popover na modal"</span> <span class="na">data-content=</span><span class="s">"É um popover na modal"</span> <span class="na">data-placement=</span><span class="s">"top"</span><span class="nt">&gt;</span>
-          Popover
-        <span class="nt">&lt;/a&gt;</span>
-      <span class="nt">&lt;/p&gt;</span>
-      <span class="nt">&lt;p&gt;</span>Libero qui repellendus ipsa molestiae velit nemo incidunt ut ipsa minima error. Natus ad itaque autem nobis quod quisquam consequatur. Nam maiores dolorem magni nam voluptas optio. Officiis exercitationem quaerat nam quisquam vitae consequatur aut. Ipsam cum animi expedita voluptatibus rerum nam expedita et. Debitis amet asperiores non aspernatur in quis ut veniam voluptatum tempore aut a atque molestiae. Et consectetur ex odio ut molestiae sit corporis non numquam voluptates. Nihil sunt aut vel ut velit expedita sunt quibusdam earum ex quia eos praesentium eos. Esse porro et ut aliquam consequatur possimus nam quibusdam ab similique et praesentium. Nisi molestias tempora qui dolor aspernatur in. Et maiores provident voluptate ut animi et corrupti et nulla. Iste nostrum distinctio est similique deserunt natus qui non inventore blanditiis. Eum et autem quo nulla aut est maxime et facilis perspiciatis ratione labore tempora aut. Et non dolores ad. Reprehenderit temporibus ut dolores<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-modal-body"</span> <span class="na">id=</span><span class="s">"myModalBody"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Illo id et itaque nisi consequatur est nemo fuga magni ipsa ut. Est perferendis sed rem perferendis iusto consequatur dolorem. Dolorem fuga fuga et voluptas suscipit laudantium et autem consectetur ducimus. Vero quos asperiores aperiam soluta enim. Cupiditate id at voluptas enim incidunt. Tempore nemo culpa dolorem minima voluptas delectus inventore consequatur omnis autem. Qui possimus occaecati neque eum odio minima delectus fuga deleniti. Est laboriosam itaque recusandae in voluptas nobis maiores et. Minus odit rerum quod laudantium aperiam quisquam repellat. Numquam officia et laudantium exercitationem consectetur qui alias aspernatur porro ut rerum. Vel quis nisi ullam illum delectus necessitatibus placeat consequatur. Doloremque voluptas velit a. Sunt atque non voluptatem ut. Voluptatibus fugit alias laboriosam rem eius ullam aut aut itaque qui. Ut blanditiis labore deleniti est deleniti ut ducimus<span class="nt">&lt;/p&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-modal-footer"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ls-btn ls-float-right"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
@@ -282,6 +306,12 @@
 <div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre><span class="nt">&lt;button</span> <span class="na">data-ls-module=</span><span class="s">"modal"</span> <span class="na">data-action=</span><span class="s">"http://locaweb.com.br/"</span> <span class="na">data-content=</span><span class="s">"&lt;h2&gt;Título feito dentro do data-content&lt;/h2&gt;&lt;p&gt;Conteúdo feito dentro do data-content&lt;/p&gt;"</span> <span class="na">data-title=</span><span class="s">"Este título é o atributo data-title"</span> <span class="na">data-class=</span><span class="s">"ls-btn-danger"</span> <span class="na">data-save=</span><span class="s">"Salvar"</span> <span class="na">data-close=</span><span class="s">"Fechar"</span> <span class="na">class=</span><span class="s">"ls-btn-primary"</span><span class="nt">&gt;</span> Modal sem target <span class="nt">&lt;/button&gt;</span>
 </pre></td></tr></tbody></table>
 </div>
+  <hr>
+  <h3 class="ls-title-4">Modal sempre aberta</h3>
+  <p>Se você quer manter uma modal sempre aberta, basta inserir esse código <code>data-modal-blocked</code> na sua modal, no mesmo lugar onde fica a <code>.ls-modal</code>.</p>
+  <p class="ls-alert-warning"><strong>Atenção:</strong> Se você for fechar sua modal depois de uma determinada ação, você precisa chamar <code>locastyle.modal.close()</code></p>
+
+
 </section>
 
   </div>

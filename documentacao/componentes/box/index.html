@@ -31,6 +31,7 @@
   <ul>
     <li><a href="/locawebstyle">Home</a></li>
     <li><a href="/locawebstyle/documentacao/introducao/">Documentação</a></li>
+    <li><a href="/locawebstyle/documentacao/introducao/boilerplate/">Comece por aqui</a></li>
     <li><a href="/locawebstyle/changelog">Changelog</a></li>
     <li><a href="http://locaweb.github.io/locawebstyle-v1/">Documentação V1</a></li>
     <li><a href="http://locaweb.github.io/locawebstyle-v2/">Documentação V2</a></li>
@@ -64,7 +65,8 @@
 
 <div class="doc-content container">
   <div class="row">
-    <aside class="col-md-3">
+    <aside class="doc-sidebar col-md-3">
+<div class="doc-sidebar-inner">
   <nav class="doc-sidebar-menu">
     <ul>
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/'>Abas</a></li>
@@ -84,9 +86,9 @@
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/tags/'>Tags</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/tooltip/'>Tooltip</a></li>
       <li class=''><a class='' href='/locawebstyle/documentacao/componentes/tour-guiado/'>Tour Guiado</a></li>
-      <li class=''><a class='' href='/locawebstyle/documentacao/componentes/rastreando-eventos/'>Rastreando eventos</a></li>
     </ul>
   </nav>
+</div>
 </aside>
 
 
@@ -100,6 +102,28 @@
 
   <p>Geralmente precisamos agrupar ou dividir algumas informações em caixas no layout. Essas caixas são simples e bem genéricas que podem conter qualquer outro elemento. </p>
 
+  <p>Para criar um box genérico, basta adicionar a classe <code>.ls-box</code> em algum elemento, de preferência em um elemento DIV.</p>
+
+  <div class="ls-box-demo">
+    <div class="ls-box">
+  <h5 class="ls-title-3">Um título</h5>
+  <p>Uma caixa genérica lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, dicta, alias accusantium est unde autem ipsam libero tempora tempore nesciunt eveniet eaque laudantium qui facilis aut deserunt sequi suscipit perspiciatis.</p>
+</div>
+
+  </div>
+
+  <div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-box"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"ls-title-3"</span><span class="nt">&gt;</span>Um título<span class="nt">&lt;/h5&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Uma caixa genérica lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, dicta, alias accusantium est unde autem ipsam libero tempora tempore nesciunt eveniet eaque laudantium qui facilis aut deserunt sequi suscipit perspiciatis.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table>
+</div>
+
+
+  <p>Estas são as classes que você pode usar para modificar o <code>.ls-box</code>.</p>
   <table class="ls-table">
     <thead>
       <tr>
@@ -132,29 +156,6 @@
       </tr>
     </tbody>
   </table>
-
-  <h2 class="doc-title-3">Box genérico</h2>
-
-  <p>Para criar um box genérico, basta adicionar a classe <code>.ls-box</code> em algum elemento, de preferência em um elemento DIV.</p>
-
-  <div class="ls-box-demo">
-    <div class="ls-box">
-  <h5 class="ls-title-3">Um título</h5>
-  <p>Uma caixa genérica lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, dicta, alias accusantium est unde autem ipsam libero tempora tempore nesciunt eveniet eaque laudantium qui facilis aut deserunt sequi suscipit perspiciatis.</p>
-</div>
-
-  </div>
-
-  <div class="highlight html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
-2
-3
-4</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-box"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"ls-title-3"</span><span class="nt">&gt;</span>Um título<span class="nt">&lt;/h5&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Uma caixa genérica lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, dicta, alias accusantium est unde autem ipsam libero tempora tempore nesciunt eveniet eaque laudantium qui facilis aut deserunt sequi suscipit perspiciatis.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</pre></td></tr></tbody></table>
-</div>
-
 
   <h2 class="doc-title-3">Box com a classe .ls-box-gray</h2>
 
@@ -485,22 +486,22 @@
   <div class="ls-box-demo">
     <div class="ls-box ls-lg-space">
   <h5 class="ls-title-3">Box grande .ls-lg-space</h5>
-  <p>Id est nihil dolor dignissimos reiciendis voluptatem beatae dolorum et sequi fugit. beatae voluptatibus ex cupiditate harum sequi laudantium. perferendis mollitia veniam ipsam itaque quisquam eos. et corrupti in necessitatibus. voluptas est hic eligendi sit est est quaerat. tempora et cupiditate qui omnis inventore voluptas quia cupiditate delectus numquam itaque laborum voluptatem reiciendis</p>
+  <p>Vel velit cum architecto eaque quam nihil atque blanditiis accusantium suscipit. suscipit impedit qui rem eos rerum aut. qui illo sed fugit autem accusamus quia id molestiae. amet temporibus et soluta et incidunt nobis autem dolores quia perferendis occaecati. nulla dolores voluptas illo itaque deserunt at et quisquam non sint ea praesentium numquam</p>
 </div>
 
 <div class="ls-box ls-md-space">
   <h5 class="ls-title-3">Box médio .ls-md-space</h5>
-  <p>Enim rerum voluptas architecto aliquid architecto sint. necessitatibus libero facere quam esse dolores hic molestias ut quis unde vitae maiores nulla. expedita in assumenda cupiditate</p>
+  <p>Tempore consequatur cum quia sunt error rerum error. in repellat velit est aperiam voluptas perferendis rem aut illo. ea ab repudiandae ex et alias quaerat sunt at</p>
 </div>
 
 <div class="ls-box">
   <h5 class="ls-title-3">Box default (sem classe de tamanho)</h5>
-  <p>Soluta corrupti et fugit omnis illo explicabo. iusto voluptatem minus ut omnis officiis esse culpa eos voluptatibus voluptatem molestiae sunt nam. consequatur facere omnis dolorem ut sunt laudantium molestiae qui delectus qui provident et et optio. eligendi dolorem aut cupiditate libero</p>
+  <p>Maiores alias est qui. eius quasi reiciendis sapiente vel repellat aut velit ut eum aperiam. qui non voluptates et ut et ab. sit dolore commodi et voluptatem delectus aliquam nihil aliquam qui</p>
 </div>
 
 <div class="ls-box ls-sm-space">
   <h5 class="ls-title-5">Box pequeno .ls-sm-space</h5>
-  <p>Incidunt autem porro commodi exercitationem est amet possimus est. soluta et ad molestias. tempore nesciunt ab maxime architecto assumenda qui nisi. nemo atque libero voluptatem nobis aliquam fugit. deleniti eius nihil debitis enim accusantium dolores modi et maiores. aut consequuntur cupiditate ut explicabo illo ipsa temporibus maiores hic facere occaecati sed</p>
+  <p>Harum rerum quia non et molestias inventore et qui. sunt aut dignissimos dicta. ad laudantium quo et qui. quo placeat quis itaque saepe ducimus</p>
 </div>
 
 <div class="ls-box ls-xs-space">
@@ -535,22 +536,22 @@
 23
 24</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-box ls-lg-space"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"ls-title-3"</span><span class="nt">&gt;</span>Box grande .ls-lg-space<span class="nt">&lt;/h5&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Voluptatem quia commodi voluptas quia. fuga adipisci est quia suscipit aliquam esse nemo eos dolore voluptatem aspernatur quo. facere officiis molestiae sapiente aliquid sed sapiente beatae. laborum dolores nesciunt labore quasi ea tempore perspiciatis illum non fugit eligendi eos qui fuga. iure quia error aut hic et minima. nemo tenetur qui sunt suscipit id consequatur sit sit. quis sunt numquam in mollitia pariatur tempore rerum exercitationem nobis<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Quis sit aut debitis molestiae tempore occaecati porro culpa. voluptatum alias aspernatur possimus sit aut culpa. fuga est sunt at repellat ad magni<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-box ls-md-space"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"ls-title-3"</span><span class="nt">&gt;</span>Box médio .ls-md-space<span class="nt">&lt;/h5&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Commodi culpa assumenda odit perferendis et. debitis dolorem sint et. optio vel aut consequuntur qui totam officiis odio ab dolorum. corporis dolorum quisquam eos placeat voluptatem itaque libero cum. est non dolorem quo delectus repellendus numquam est et quidem et. facilis quis at et sapiente voluptas enim sit voluptatem est ut nesciunt. esse corrupti dicta sit eum id natus et nobis<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Pariatur molestiae et dolores inventore delectus ad et ut sunt aperiam beatae quia dolorum. numquam autem deserunt dolor qui alias laboriosam fugiat velit. rerum temporibus quas maxime. nisi explicabo qui ut sapiente amet vitae quia et. est quasi sed nam est eaque natus sint ullam qui. natus distinctio saepe sed placeat in<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-box"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"ls-title-3"</span><span class="nt">&gt;</span>Box default (sem classe de tamanho)<span class="nt">&lt;/h5&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Consequatur officiis eum doloremque hic provident aut natus. quia omnis animi facilis accusamus eligendi ut eos aut enim dolor rerum. iure culpa doloremque non quaerat. qui reiciendis repellat sit qui et porro fugit voluptatem sequi quidem voluptatum eveniet. possimus et et molestiae dolorum incidunt aperiam blanditiis sit est laudantium ullam molestiae. possimus aut ut facilis eos perferendis delectus quaerat. aut sapiente quo rem dicta temporibus<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Nulla voluptatem ut quia magni doloribus velit autem. consequuntur soluta maxime quia dolor non voluptas omnis quis quo officiis soluta voluptatem. non libero vero enim quia velit voluptas quae ipsa fugiat<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-box ls-sm-space"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"ls-title-5"</span><span class="nt">&gt;</span>Box pequeno .ls-sm-space<span class="nt">&lt;/h5&gt;</span>
-  <span class="nt">&lt;p&gt;</span>Nihil voluptatem qui molestiae iste ex. ut dolores nostrum quos ut omnis voluptas aut odio quidem ducimus. praesentium omnis vel quaerat quis. maxime in sequi tenetur omnis molestiae nam est libero maxime architecto debitis ut quasi. et aut aut quisquam tempora expedita necessitatibus assumenda aut veritatis itaque omnis<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>Quis alias sunt sit dolor et corrupti aliquid nesciunt rerum. et harum eaque qui reiciendis aut incidunt at voluptatibus accusantium voluptates mollitia officiis. harum doloribus illum asperiores aut dolorum numquam nemo ab aut explicabo aut<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ls-box ls-xs-space"</span><span class="nt">&gt;</span>
